@@ -1,0 +1,725 @@
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navegacion */
+
+.navegacion {
+    background-color: #2552A3;
+    /* background-color: rgba(37, 82, 163, 1); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion_titulo {
+    /* background-color: blueviolet; */
+    margin: 0% 0% 0% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion_titulo h1 {
+    color: white;
+    /* font-size: 50px; */
+    font-size: 312.5%;
+}
+
+.navegacion_resaltado {
+    color: #A6744A;
+}
+
+.navegacion_links {
+    /* background-color: blue; */
+    margin: 0% 2% 0% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion_links ul {
+    display: flex;
+    gap: 1.25em;
+    list-style-type: none;
+}
+
+.navegacion_links li a {
+    color: white;
+    text-decoration: none;
+    /* font-size: 25px; */
+    font-size: calc(25 / 16 * 100%);;
+}
+
+/* Inicio */
+
+.inicio {
+    background-color: #2552A3;
+    /* height: 550px; */
+    height: 34.375em;
+    display: flex;
+    justify-content: space-around;
+    position: relative
+}
+
+.inicio_caja {
+    /* background-color: #A6744A; */
+    margin: 5% 0% 0% 0%;
+    display: grid;
+    grid-template-rows: 1fr 0.6fr 1.9fr;
+    grid-gap: 0;
+}
+
+.inicio_titulo {
+    color: white;
+    /* font-size: 25px; */
+    font-size: calc(25 / 16 * 100%);
+}
+
+.inicio_titulo_resaltado{
+    /* font-size: 50px; */
+    font-size: calc(50 / 16 * 100%);
+    font-weight: 900;
+}
+
+.inicio_subtitulo {
+    color: white;
+}
+
+.inicio_boton {
+    background-color: white;
+    /* width: 100px;
+    height: 30px; */
+    width: 6.25em;
+    height: 1.875em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio_boton_resaltado {
+    /* background-color: white; */
+    font-weight: 900;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.inicio_imagen {
+    /* background-color: #A6744A; */
+    margin: 4% 0% 0% 0%;
+    width: 25%;
+    height: 70%;
+
+}
+
+.inicio_imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTENIDO */
+
+/* 1era parte */
+
+.contenido {
+    background-color: white;
+    margin: 0% 13% 0% 13%;
+    /* min-height: 1000px; */
+    min-height: 62.5em;
+    padding: 5% 0% 0% 0%;
+}
+
+.contenido_informacion {
+    /* background-colorgb(216, 180, 22)use; */
+    /* height: 250px; */
+    height: 15.625em;
+    display: flex;
+    justify-content: space-around;
+    gap: 4%;
+}   
+
+.informacion_camion, .informacion_monedero, .informacion_tarjeta, .informacion_bolsa {
+    /* background-color: brown;    */
+    background-color: #F5F5F5;
+}
+
+.informacion_camion_img, .informacion_monedero_img, .informacion_tarjeta_img, .informacion_bolsa_img {
+    /* background-color: chartreuse; */
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    justify-items: center;       
+}
+
+.informacion_camion_img img, .informacion_monedero_img img, .informacion_tarjeta_img img, .informacion_bolsa_img img{
+    /* max-width: 50px;
+    max-height: 100px; */
+    max-width: 3.125em;
+    max-height: 6.25em;
+    margin: 5% 0% 5% 0%;
+}
+
+.informacion_titulo_camion, .informacion_titulo_monedero, .informacion_titulo_tarjeta, .informacion_titulo_bolsa {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+
+.informacion_texto_camion, .informacion_texto_monedero, .informacion_texto_tarjeta, .informacion_texto_bolsa {
+    text-align: center;
+}
+
+/* 2da parte */
+
+/* Seccion hombre */
+
+.contenido_venta_hombre {
+    /* background-color: #A6744A; */
+    /* height: 500px; */
+    height: 31.25em;
+    padding: 4% 0% 4% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: end; 
+    position: relative;
+}
+
+.hombre_titulo_grande_hombre {
+    /* background-color: darkgreen; */
+    position: absolute;
+    top: 12%;
+    left: 66.6%;
+    transform: translate(-50%, -50%);
+}
+
+.hombre_titulo_grande_hombre h1 {
+    /* font-size: 40px; */
+    font-size: calc(40 / 16 * 100%);
+    font-weight: 900;
+}
+
+.hombre_imagen_grande {
+    /* background-color: #2552A3; */
+    width: 30%;
+    height: 100%;
+}
+
+.hombre_imagen_grande img {
+    width: 100%;
+    height: 100%;
+}
+
+.hombre_zapatilla_uno, .hombre_zapatilla_dos, .hombre_zapatilla_tres {
+    /* background-color: chartreuse; */
+    width: 20%;
+    height: 80%;
+}
+
+.hombre_imagen_zapatilla_uno, .hombre_imagen_zapatilla_dos, .hombre_imagen_zapatilla_tres{
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+.hombre_titulo_zapatilla_uno, .hombre_titulo_zapatilla_dos, .hombre_titulo_zapatilla_tres {  
+    /* background-color: blueviolet; */
+    margin: 15% 0% 0% 0%;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+.hombre_puntuacion_uno, .hombre_puntuacion_dos, .hombre_puntuacion_tres {
+    /* background-color: gold; */
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+.hombre_puntuacion_uno img, .hombre_puntuacion_dos img, .hombre_puntuacion_tres img {
+    width: 35%;
+    height: 50%;
+}
+
+.hombre_precio_zapatilla_uno, .hombre_precio_zapatilla_dos, .hombre_precio_zapatilla_tres {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+/* Seccion mujer */
+
+.contenido_ventas_mujer {
+    /* background-color: #A6744A; */
+    /* height: 500px; */
+    height: 31.25em;
+    padding: 4% 0% 4% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: end; 
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.mujer_titulo_grande_mujer {
+    position: absolute;
+    top: 12%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.mujer_titulo_grande_mujer h1 {
+    /* font-size: 40px; */
+    font-size: calc(40 / 16 * 100%);
+    font-weight: 900;
+}
+
+.mujer_imagen_grande {
+    /* background-color: #2552A3; */
+    width: 30%;
+    height: 100%;
+}
+
+.mujer_imagen_grande img {
+    width: 100%;
+    height: 100%;
+}
+
+.mujer_zapatilla_uno, .mujer_zapatilla_dos, .mujer_zapatilla_tres {
+    /* background-color: chartreuse; */
+    width: 20%;
+    height: 80%;
+}
+
+.mujer_imagen_zapatilla_uno, .mujer_imagen_zapatilla_dos, .mujer_imagen_zapatilla_tres{
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+.mujer_titulo_zapatilla_uno, .mujer_titulo_zapatilla_dos, .mujer_titulo_zapatilla_tres {  
+    /* background-color: blueviolet; */
+    margin: 15% 0% 0% 0%;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+.mujer_puntuacion_uno, .mujer_puntuacion_dos, .mujer_puntuacion_tres {
+    /* background-color: gold; */
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+.mujer_puntuacion_uno img, .mujer_puntuacion_dos img, .mujer_puntuacion_tres img {
+    width: 35%;
+    height: 50%;
+}
+
+.mujer_precio_zapatilla_uno, .mujer_precio_zapatilla_dos, .mujer_precio_zapatilla_tres {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+/* 3era parte */
+
+.contenido_ventas_top {
+    /* background-color: #2552A3; */
+    /* height: 500px; */
+    height: 31.25em;
+    padding: 5% 0% 0% 0%;
+}
+
+.top_titulo_subtitulo {
+    /* background-color: rgb(0, 255, 200); */
+    height: 25%;
+}
+
+.top_titulo {
+    display: flex;
+    justify-content: center;
+    /* font-size: 20px; */
+    font-size: calc(20 / 16 * 100%);
+    font-weight: 900;
+}
+
+.top_subtitulo {
+    display: flex;
+    justify-content: center;
+    /* font-size: 12px; */
+    font-size: calc(12 / 16 * 100);
+    font-weight: 900;
+}
+
+
+.top_zapatillas {
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+
+.top_zapatilla_uno, .top_zapatilla_dos, .top_zapatilla_tres, .top_zapatilla_cuatro  {
+    /* background-color: chartreuse; */
+    width: 20%;
+    height: 90%;
+}
+
+.top_imagen_zapatilla_uno, .top_imagen_zapatilla_dos, .top_imagen_zapatilla_tres, .top_imagen_zapatilla_cuatro  {
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+.top_titulo_zapatilla_uno, .top_titulo_zapatilla_dos, .top_titulo_zapatilla_tres, .top_titulo_zapatilla_cuatro {  
+    /* background-color: blueviolet; */
+    margin: 15% 0% 0% 0%;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+.top_puntuacion_uno, .top_puntuacion_dos, .top_puntuacion_tres, .top_puntuacion_cuatro{
+    /* background-color: gold; */
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+}
+
+.top_puntuacion_uno img, .top_puntuacion_dos img, .top_puntuacion_tres img, .top_puntuacion_cuatro img{
+    width: 35%;
+    height: 50%;
+}
+
+.top_precio_zapatilla_uno, .top_precio_zapatilla_dos, .top_precio_zapatilla_tres, .top_precio_zapatilla_cuatro {
+    /* background-color: rgb(35, 149, 194); */
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-weight: 900;
+}
+
+/* 4ta parte */
+.contenido_publicidad {
+    background-color: #A6744A;
+    margin: 8% 0% 0% 0%;
+    /* height: 400px; */
+    height: 25em;
+    position: relative;
+}
+
+.publicidad_boton {
+    background-color: white;
+    margin: 24% 0% 0% 2%;
+    width: 14%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.publicidad_boton a {
+    font-weight: 900;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.contenido_publicidad img {
+    width: 100%;
+    height: 100%;
+}
+/* Footer */
+.footer {
+    background-color: #171717;
+    margin: 4% 0% 0% 0%;
+    width: 100%;
+    /* height: 200px; */
+    height: 12.5em;
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_lista_uno {
+    /* background-color: aqua; */
+    width: 10%;
+}
+
+.footer_lista_dos {
+    /* background-color: aqua; */
+    width: 10%;
+}
+
+.lista_titulo {
+    font-weight: 900;
+}
+
+.footer_lista_uno li, .footer_lista_dos li, .footer_redes li, .footer_registro li {
+    margin: 4% 0% 0% 0%;
+    list-style: none;
+    color: white;
+}
+
+.footer_lista_uno li a, .footer_lista_dos li a, .footer_redes li a, .footer_registro li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer_redes {
+    /* background-color: aqua; */
+    width: 15%;
+}
+
+.lista_titulo_redes {
+    font-weight: 900;
+}
+
+.footer_redes li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer_registro {
+    /* background-color: aqua; */
+    width: 15%;
+}
+
+.form {
+    width: 5%;
+    margin: 7% 0% 0% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form input[type="email"] {
+    flex-grow: 1;
+}
+
+.form_color {
+    background-color: #232323;
+    color: #202020;
+    /* height: 30px; */
+    height: 1.875em;
+}
+
+.buttom_color {
+    background-color: #EE7703;
+    color: white;
+    /* height: 34px; */
+    height: 2.125em;
+}
+
+/* Responsive */
+
+/* Estilos para dispositivos con pantalla de hasta 600px de ancho */
+/* Estilos existentes... */
+
+/* Estilos para dispositivos con pantalla de hasta 600px de ancho */
+
+/* Estilos existentes... */
+
+/* Estilos para dispositivos con pantalla de hasta 600px de ancho */
+@media (max-width: 600px) {
+    .navegacion {
+        position: static;
+        top: 0;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        z-index: 1000;
+    }
+
+    .navegacion_titulo {
+        margin: 2% 0;
+    }
+
+    .navegacion_links {
+        margin: 2% 0;
+    }
+
+    .navegacion_links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio {
+        /* flex-direction: column; */
+        padding: 10% 2% 2% 2%;
+    }
+
+    /* .inicio_caja {
+        margin: % 0;
+    } */
+
+    .inicio_imagen {
+        /* background-color: #A6744A; */
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inicio_imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .contenido {
+        background-color: rgb(139, 25, 25);
+    } */
+
+    .contenido_informacion {
+        /* background-color: rgb(139, 25, 25); */
+        display: flex;
+        flex-direction: column;
+        margin: 60% 0%;
+    }
+
+    .contenido_venta_hombre,
+    .contenido_ventas_mujer,
+    .contenido_ventas_top {
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(40%, auto);
+        gap: 13%;
+        place-items: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hombre_imagen_grande,
+    .mujer_imagen_grande {
+        background-color: #2552A3;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: flex-end;
+        width: 50%;
+        min-height: 50%;
+        /* position: relative;
+        top: 10%; */
+        margin-top: 20%;
+    }
+
+    .hombre_imagen_grande img {
+        /* position: absolute; */
+        margin-top: 10%;
+    }
+
+    .hombre_titulo_grande_hombre {
+        font-size: 70%;
+        margin: 0% 0% 15% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        /* background-color: darkgreen; */
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hombre_titulo_grande_hombre h1 {
+        text-align: center;
+    }
+
+    .hombre_zapatilla_uno,
+    .hombre_zapatilla_dos,
+    .hombre_zapatilla_tres,
+    .mujer_zapatilla_uno,
+    .mujer_zapatilla_dos,
+    .mujer_zapatilla_tres {
+        margin-top: 5%;
+        width: 60%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;       
+        align-items: center;
+    }
+
+    .hombre_titulo_zapatilla_uno {
+        margin: 5% 0% 0% 0%;
+    }
+
+    .hombre_puntuacion_uno{
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hombre_imagen_zapatilla_uno {
+        width: 40%;
+    }
+
+    .top_zapatillas {
+        flex-direction: column;
+    }
+
+    .top_zapatilla_uno,
+    .top_zapatilla_dos,
+    .top_zapatilla_tres,
+    .top_zapatilla_cuatro {
+        width: 100%;
+        /* margin: 2% 0; */
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer_lista_uno,
+    .footer_lista_dos,
+    .footer_redes,
+    .footer_registro {
+        width: 100%;
+        margin: 2% 0;
+    }
+}
