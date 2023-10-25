@@ -551,7 +551,7 @@ body {
 
 /* Responsive */
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
 
     * {
         box-sizing: border-box;
@@ -788,7 +788,7 @@ body {
 }
 
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
 
     * {
         box-sizing: border-box;
@@ -1025,7 +1025,7 @@ body {
 }
 
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 
     * {
         box-sizing: border-box;
@@ -1091,7 +1091,8 @@ body {
         /* background-color: rgb(139, 25, 25); */
         display: flex;
         flex-direction: column;
-        margin: 60% 0%;
+        /* margin: 60% 0%; */
+        margin-top: 15em;
     }
 
     .contenido_venta_hombre {
@@ -1105,7 +1106,7 @@ body {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2em;
-        margin-top: 20em;
+        margin-top: 22em;
     }
 
     .contenido_ventas_mujer {
