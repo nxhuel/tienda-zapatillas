@@ -1,6 +1,6 @@
 * {
     margin: 0; 
-    padding: 0; 
+    padding: 0;
 }
 
 body {
@@ -560,6 +560,11 @@ body {
 
 /* Estilos para dispositivos con pantalla de hasta 600px de ancho */
 @media (max-width: 390px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
     .navegacion {
         position: static;
         top: 0;
@@ -753,15 +758,9 @@ body {
 
     .top_zapatillas {
         flex-direction: column;
+        width: 100%;
     }
 
-    .top_zapatilla_uno,
-    .top_zapatilla_dos,
-    .top_zapatilla_tres,
-    .top_zapatilla_cuatro {
-        width: 30%;
-        /* margin: 2% 0; */
-    }
 
     .contenido_publicidad {
         margin-top: 25em;
@@ -796,3 +795,6 @@ body {
     }
 
 }
+
+/* MEDIANOS */
+
